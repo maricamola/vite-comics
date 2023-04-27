@@ -64,16 +64,36 @@ export default {
           </ul>
         </nav>
       </div>
-      </div>
 
       <div class="logo">
         <img src="/dc-logo-gb.png" alt="logo-dc">
       </div>
+      </div>
+
+
       
     </div>
 
     <div class="bottom">
+      <div class="container">
+        <div class="button">
+          <button>SIGN-UP NOW!</button>
+        </div>
 
+        <div class="icons">
+          <span><h3>FOLLOW US</h3></span>
+          <nav>
+            <ul>
+              <li><a href="#"><img src="footer-facebook.png" alt="logo facebook"></a></li>
+              <li><a href="#"><img src="footer-twitter.png" alt="logo twitter"> </a></li>
+              <li><a href="#"><img src="footer-youtube.png" alt="logo youtube"></a></li>
+              <li><a href="#"><img src="footer-pinterest.png" alt="logo pinterest"></a></li>
+              <li><a href="#"><img src="footer-periscope.png" alt="logo periscope"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
     </div>
   </footer>
   
@@ -86,7 +106,8 @@ export default {
 
 footer{
   background-image: url('../public/footer-bg.jpg');
-  .colonne{
+  .colonne,
+  .container {
     @include centerFlex('horizontal');
     width: 70%;
     justify-content: flex-start;
@@ -110,6 +131,46 @@ footer{
   .top{
     @include centerFlex('horizontal');
   }
+  .bottom,
+  button{
+    background-color: #303030;
+  }
+  button{
+    background-color: none;
+    padding: 15px;
+    border: 2px solid $primary-color;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+      transition: 1s;
+      background-color: $primary-color;
+    }
+  }
+  .container{
+    @include centerFlex('horizontal');
+    justify-content: space-between;
+    align-items: center;
+    li{
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+  }
+  h3{
+    color: $primary-color;
+    margin: 10px;
+  }
+  img{
+    width: 28px;
+  }
+  }
+
 }
+
+
 
 </style>
