@@ -1,1 +1,18 @@
-@use './general/vaiables' as *;
+//Importo le variabili per poterle utilizzare
+@use './general/variables' as *;
+
+//Importo il mixin che mi servirà per le funzioni
+//Gli @use vanno posizionati sempre in altro e prima degli @import
+@use './general/mixin' as *;
+
+//Importo il font
+@import '@fontsource/roboto';
+
+//Importo il file degli stili di scrittura
+@import './general/typography.scss';
+
+//Importo file general
+@import './general/general';
+
+//Importo file utility
+@import './general/utility';
