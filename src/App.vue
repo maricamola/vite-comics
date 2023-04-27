@@ -1,13 +1,27 @@
 <script>
-export default {
+import Header from './components/Header.vue'
+import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 
+
+export default {
+  name: 'App',
+  components:{
+      Header,
+      Main,
+      Footer
+  }
 }
 </script>
 
 <template>
-  <div class="container">
-    <h1>HEADER</h1>
-  </div>
+
+  <header />
+
+  <main />
+
+  <footer />
+  
 </template>
 
 <style lang="scss">
