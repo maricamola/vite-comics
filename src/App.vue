@@ -16,18 +16,15 @@ export default {
 
 <template>
 
-  <header />
+<Header />
 
-  <main />
+<Main />
 
-  <footer />
-  
+<Footer />
+
 </template>
 
 <style lang="scss">
-.container{
-  h1{
-    background-color:cadetblue;
-  }
-}
+//Inserisco gli stili generali che possono essere ereditati da tutta l'app
+@use './scss/main'
 </style>

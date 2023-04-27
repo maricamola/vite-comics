@@ -16,6 +16,9 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 1) Mi aggiunto la cartella delle img che mi serviranno
 2) Creo i miei components(Header,Main,Footer)
 3) Importo i componenti in App.vue
+4) Creo una cartella scss dove vado ad inserire un file main.scss dove definisco gli stili che possono utilizzati da tutta l'app
+5) Alla cartella scss aggiungo delle sottocartelle all'interno delle quali creo dei file con le variabili
+6) Importo il file nel main.scss 
 
 ## Vue 3 + Vite
 
