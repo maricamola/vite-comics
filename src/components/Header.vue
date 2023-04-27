@@ -39,18 +39,24 @@ header{
   padding: 50px;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
+  width: 70%;
+  margin: 0 auto;
   ul{
   @include centerFlex('horizontal');
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   a{
     display: inline-block;
     text-transform: uppercase;
-    margin: 1rem;
+    margin: 10px;
     color: black;
     font-weight: bold;
     &:hover{
       color: #0282F9;
     }
+  }
+  img{
+    width: 10%;
   }
 }
 }

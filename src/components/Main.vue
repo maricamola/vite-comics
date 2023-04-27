@@ -26,11 +26,15 @@ export default {
 @use '../scss/general/mixin' as *;
 @use '../scss/general/utility' as *;
 
+main{
+  background-color: black;
+}
 .content{
-  background-color: #1C1C1C;
+  width: 70%;
+  margin: 0 auto;
   h1{
     color: white;
-    padding: 70px 50px;
+    padding: 70px 0px;
   }
 }
 
