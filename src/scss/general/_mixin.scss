@@ -8,7 +8,7 @@
 
 // In questo caso abbiamo creato un mixin che accetta in ingresso un parametro che viene chiamato "$type"
 // Centra in un elemento, default: both | horizontal | vertical
-@mixin centerflex($type: 'both') {
+@mixin centerFlex($type: 'both') {
 
   display: flex;
 
