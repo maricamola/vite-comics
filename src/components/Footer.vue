@@ -106,6 +106,7 @@ export default {
 
 footer{
   background-image: url('../public/footer-bg.jpg');
+  background-size: cover;
   .colonne,
   .container {
     @include centerFlex('horizontal');
@@ -127,6 +128,7 @@ footer{
   }
   img{
     z-index: 99;
+    width: 100px;
   }
   .top{
     @include centerFlex('horizontal');
