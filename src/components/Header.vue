@@ -1,6 +1,62 @@
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return{
+      menu:[
+        {
+          href: '#',
+          text: 'Characters',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'comics',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'movies',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'tv',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'games',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'collectibles',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'videos',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'fans',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'news',
+          isActive: 'false'
+        },
+        {
+          href: '#',
+          text: 'shop',
+          isActive: 'false'
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -12,16 +68,10 @@ export default {
 
   <nav>
     <ul>
-      <li><a href="#">Characters</a></li>
-      <li><a href="#">comics</a></li>
-      <li><a href="#">movies</a></li>
-      <li><a href="#">tv</a></li>
-      <li><a href="#">games</a></li>
-      <li><a href="#">collectibles</a></li>
-      <li><a href="#">videos</a></li>
-      <li><a href="#">fans</a></li>
-      <li><a href="#">news</a></li>
-      <li><a href="#">shop</a></li>
+      <li v-for = "(link, index) in menu"
+      :key="index">
+      <a href="link.href"> {{ link.text }} </a>
+      </li>
     </ul>
   </nav>
   </header>
@@ -46,6 +96,10 @@ header{
     text-transform: uppercase;
     margin: 1rem;
     color: black;
+    font-weight: bold;
+    &:hover{
+      color: #0282F9;
+    }
   }
 }
 }
