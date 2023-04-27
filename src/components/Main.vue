@@ -11,7 +11,11 @@ export default {
 
     <div class="loghi">
       <ul>
-        
+        <li><img src="buy-comics-digital-comics.png" alt="digital comics"> digital comics </li>
+        <li><img src="buy-comics-merchandise.png" alt="merchandise">dc merchandise</li>
+        <li><img src="buy-comics-subscriptions.png" alt="subscriptions">subscriptions</li>
+        <li><img src="buy-comics-shop-locator.png" alt="comic shop locator">comic shop locator</li>
+        <li><img src="buy-dc-power-visa.svg" alt="power visa">dc power visa</li>
       </ul>
     </div>
   </main>
@@ -31,7 +35,27 @@ export default {
 }
 
 .loghi{
+  @include centerFlex('horizontal');
   background-color: $primary-color;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  img{
+    width: 40px;
+    vertical-align: middle;
+    margin: 10px;
+    cursor: pointer;
+  }
+  ul{
+    @include centerFlex('horizontal');
+    align-items: center;
+  }
+  li{
+    display: inline-block;
+    margin-left: 60px;
+    padding: 20px;
+    cursor: pointer;
+  }
 }
 
 </style>

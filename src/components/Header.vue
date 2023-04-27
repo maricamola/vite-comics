@@ -1,60 +1,11 @@
 <script>
+import {mainMenu} from '../data/menus'
+
 export default {
   name: 'Header',
   data(){
     return{
-      menu:[
-        {
-          href: '#',
-          text: 'Characters',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'comics',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'movies',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'tv',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'games',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'collectibles',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'videos',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'fans',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'news',
-          isActive: 'false'
-        },
-        {
-          href: '#',
-          text: 'shop',
-          isActive: 'false'
-        },
-      ]
+      mainMenu
     }
   }
 }
@@ -68,9 +19,9 @@ export default {
 
   <nav>
     <ul>
-      <li v-for = "(link, index) in menu"
+      <li v-for = "(link, index) in mainMenu"
       :key="index">
-      <a href="link.href"> {{ link.text }} </a>
+      <a :class="{'active' : link.isActive}" :href="link.href"> {{ link.text }} </a>
       </li>
     </ul>
   </nav>
