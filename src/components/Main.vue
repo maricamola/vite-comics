@@ -1,10 +1,34 @@
 <script>
+import ProductCard from './ProductCard.vue'
+import products from '../data/products'
+
 export default {
-  name: 'Main'
+  name: 'Main',
+  data() {
+    return {
+      products
+    }
+  },
+  components:{
+    ProductCard
+  }
 }
+
 </script>
+
 <template>
   <main>
+    <div class="container">
+
+    <ProductCard 
+      v-for="(product, index) in products"
+      :key="index"
+      :image="product.thumb"
+      :productName="product.series"
+    />
+
+    </div>
+    
 
     <div class="loghi">
       <ul>
@@ -23,7 +47,15 @@ export default {
 @use '../scss/general/mixin' as *;
 @use '../scss/general/utility' as *;
 
-
+main{
+  background-color: #1C1C1C;
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
 .content{
   width: 80%;
   margin: 0 auto;
