@@ -65,13 +65,12 @@ export default {
         </nav>
       </div>
 
+
+      </div>
+
       <div class="logo">
-        <img src="/dc-logo-gb.png" alt="logo-dc">
+        <img src="dc-logo-bg.png" alt="logo-dc">
       </div>
-      </div>
-
-
-      
     </div>
 
     <div class="bottom">
@@ -110,7 +109,7 @@ footer{
   .colonne,
   .container {
     @include centerFlex('horizontal');
-    width: 70%;
+    width: 80%;
     justify-content: flex-start;
     margin: 0 auto;
     padding: 50px 0;
@@ -127,15 +126,20 @@ footer{
     font-size: 12px;
   }
   img{
-    z-index: 99;
-    width: 100px;
+    width: 700px;
+    float: right;
   }
   .top{
     @include centerFlex('horizontal');
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    height: 400px;
   }
   .bottom,
   button{
     background-color: #303030;
+    position: relative;
   }
   button{
     background-color: none;

@@ -40,7 +40,7 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 5px 0;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   img{
     width: 80%;
@@ -52,7 +52,7 @@ header{
     display: inline-block;
     text-transform: uppercase;
     margin: 10px;
-    color: black;
+    color: #464646;
     font-weight: bold;
     &:hover{
       color: #0282F9;
