@@ -19,6 +19,12 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 4) Creo una cartella scss dove vado ad inserire un file main.scss dove definisco gli stili che possono utilizzati da tutta l'app
 5) Alla cartella scss aggiungo delle sottocartelle all'interno delle quali creo dei file con le variabili
 6) Importo il file nel main.scss 
+7) Installo il font direttamente nel terminale con npm 
+8) Creo variante per aggiungere il font al testo 
+9) Creo "pacchetti" nel file mixin per poterli riutilizzare in App.vue
+10) Aggiungo il logo all'header e stampo dinamicamente il menu
+11) Creo file data per poter inserire i vari dati che mi serviranno,senza dover sporcare il codice
+12)
 
 ## Vue 3 + Vite
 

@@ -39,9 +39,12 @@ header{
   padding: 50px;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 5px 0;
   width: 70%;
   margin: 0 auto;
+  img{
+    width: 80%;
+  }
   ul{
   @include centerFlex('horizontal');
   margin-bottom: 1rem;
@@ -54,9 +57,6 @@ header{
     &:hover{
       color: #0282F9;
     }
-  }
-  img{
-    width: 10%;
   }
 }
 }
