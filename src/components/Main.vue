@@ -5,9 +5,6 @@ export default {
 </script>
 <template>
   <main>
-    <div class='content'>
-      <h1> Content goes here </h1>
-    </div>
 
     <div class="loghi">
       <ul>
@@ -26,11 +23,9 @@ export default {
 @use '../scss/general/mixin' as *;
 @use '../scss/general/utility' as *;
 
-main{
-  background-color: black;
-}
+
 .content{
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   h1{
     color: white;
@@ -56,9 +51,13 @@ main{
   }
   li{
     display: inline-block;
-    margin-left: 60px;
     padding: 20px;
+    margin: 0 20px;
     cursor: pointer;
+    &:hover{
+      transition: 1s;
+      font-size: 14px;
+    }
   }
 }
 

@@ -47,13 +47,13 @@ header{
   }
   ul{
   @include centerFlex('horizontal');
-  margin-bottom: 1rem;
   a{
     display: inline-block;
     text-transform: uppercase;
     margin: 10px;
     color: #464646;
     font-weight: bold;
+    font-size: 14px;
     &:hover{
       color: #0282F9;
     }

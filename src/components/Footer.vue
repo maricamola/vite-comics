@@ -112,10 +112,10 @@ footer{
     width: 80%;
     justify-content: flex-start;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 20px 0;
   }
   .col{
-    margin: 20px;
+    margin-right: 20px;
   }
   h3{
     color: white;
@@ -124,6 +124,9 @@ footer{
   a{
     color: lighten(black, 60%);
     font-size: 12px;
+    &:hover{
+      color: white;
+    }
   }
   img{
     width: 700px;
@@ -143,7 +146,7 @@ footer{
   }
   button{
     background-color: none;
-    padding: 15px;
+    padding: 12px 15px;
     border: 2px solid $primary-color;
     color: white;
     font-weight: bold;
