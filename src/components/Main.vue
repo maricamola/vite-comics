@@ -28,6 +28,10 @@ export default {
     />
 
     </div>
+
+    <button>
+      LOAD MORE
+    </button>
     
 
     <div class="loghi">
@@ -49,11 +53,25 @@ export default {
 
 main{
   background-color: #1C1C1C;
+  text-align: center;
   .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
+  }
+  button{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      background-color:lighten($primary-color, 10%);
+    }
   }
 }
 .content{
