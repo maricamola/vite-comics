@@ -5,7 +5,8 @@ export default {
   name: 'Header',
   data(){
     return{
-      mainMenu
+      mainMenu,
+      counter: 0
     }
   }
 }
@@ -19,9 +20,9 @@ export default {
 
   <nav>
     <ul>
-      <li v-for = "(link, index) in mainMenu"
+      <li v-for = "(menu, index) in mainMenu"
       :key="index">
-      <a :class="{'active' : link.isActive}" :href="link.href"> {{ link.text }} </a>
+      <a :class="{'active' : counter == index}" @click="counter = index" :href="menu.href"> {{ menu.text }} </a>
       </li>
     </ul>
   </nav>
@@ -36,12 +37,11 @@ export default {
 header{
   @include centerFlex('horizontal');
   color: black;
-  padding: 50px;
-  align-items: center;
+  align-items: self-end;
   justify-content: space-between;
-  padding: 5px 0;
   width: 80%;
   margin: 0 auto;
+  padding-top: 5px;
   img{
     width: 80%;
   }
@@ -50,13 +50,20 @@ header{
   a{
     display: inline-block;
     text-transform: uppercase;
-    margin: 10px;
+    margin: 0 10px;
     color: #464646;
     font-weight: bold;
     font-size: 14px;
+    padding-bottom: 30px;
     &:hover{
       color: #0282F9;
     }
+    &:active{
+      border-bottom: 3px solid #0282F9;
+    }
+  }
+  .active{
+    border-bottom: 3px solid #0282F9;
   }
 }
 }

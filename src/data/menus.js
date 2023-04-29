@@ -22,7 +22,7 @@ const mainMenu = [
   {
     href: '#',
     text: 'games',
-    isActive: 'false'
+    isActive: 'true'
   },
   {
     href: '#',

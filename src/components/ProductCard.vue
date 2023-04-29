@@ -16,7 +16,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../scss/general/variables' as *;
 
 .cards{
   width: calc(80% / 6);
