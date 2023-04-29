@@ -64,6 +64,7 @@ header{
   }
   .active{
     border-bottom: 3px solid #0282F9;
+    color: #0282F9;
   }
 }
 }

@@ -18,6 +18,10 @@ export default {
 
 <template>
   <main>
+    <div class="series">
+      <h2>current series</h2>
+    </div>
+
     <div class="container">
 
     <ProductCard 
@@ -54,6 +58,18 @@ export default {
 main{
   background-color: #1C1C1C;
   text-align: center;
+  position: relative;
+  .series{
+    position: absolute;
+    top: -25px;
+    left: 200px;
+    background-color: $primary-color;
+    h2{
+      color: white;
+      padding: 5px 20px;
+      text-transform: uppercase;
+    }
+  }
   .container{
     display: flex;
     justify-content: center;
